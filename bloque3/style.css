@@ -1,0 +1,14 @@
+body {
+    background-color: white;
+    color: brown;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+input {
+    background-color: white;
+    color: teal;
+}

@@ -1,0 +1,55 @@
+body{
+    background-color: rgba(37, 68, 94, 0.589);
+}
+fieldset{
+    background-color: azure;
+    border-style: none;
+    border-radius: 10px;
+}
+legend{
+    padding-top: 18px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    padding-top: 10px;
+}
+
+.title{
+    text-align: center;
+}
+.center{
+    display: flex;
+    justify-content: space-around;
+}
+.centerbtn{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{
+    color: rgb(71, 69, 69);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+input[type='submit'] {
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgb(19, 184, 69);
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+}
+input[type="text"] {
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: blue;
+    font-size: 20px;
+    background-color: inherit;
+}

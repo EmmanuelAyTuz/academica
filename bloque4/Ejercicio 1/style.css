@@ -1,0 +1,24 @@
+        input[type='submit'] {
+            border-radius: 30px;
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            margin: 5px;
+        }
+        
+        input[type="password"] {
+            border-radius: 30px;
+            margin: 5px;
+            font-size: 25px;
+        }
+        
+        h3 {
+            color: steelblue;
+            font-size: 40px;
+            text-align: center;
+        }
+        
+        #center {
+            display: flex;
+            justify-content: space-around;
+        }

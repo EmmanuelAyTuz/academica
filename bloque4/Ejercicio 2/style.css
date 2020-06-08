@@ -1,0 +1,31 @@
+input[type='submit'] {
+    border-radius: 20px;
+    background-color: rgb(165, 12, 12);
+    color: white;
+    font-size: 25px;
+    margin: 5px;
+}
+
+input[type="number"] {
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 25px;
+}
+
+p {
+    color: royalblue;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 {
+    color: steelblue;
+    font-size: 40px;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: space-around;
+}

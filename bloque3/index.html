@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function comprobarClave() {
+            pass0 = document.formu.password0.value;
+            pass1 = document.formu.password1.value
+
+            if (pass0 == pass1) {
+                alert("Contraseña correcta");
+            } else {
+                alert("Contraseña incorrecta");
+            }
+        } 
+    </script>
+
+</head>
+
+<body>
+
+    <h1>FORMULARIO</h1>
+    <form action="form.php" method="POST" oninput="y.value=parseInt(yearold.value)" name="formu">
+
+        <!--NOMBRE-->
+        Nombre: <input type="text" name="firstName">
+        <br><br>
+        <!--APELLIDO-->
+        Apellido: <input type="text" name="lastName">
+        <br><br>
+        <!--EDAD-->
+        Edad: <input type="range" name="yearold" value="" min="18" max="120">: <output name="y"></output>
+        <br><br>
+        <!--GENERO-->
+        Sexo:
+        <input onclick="document.getElementById('txtOther').disabled = true" id="genderMan" type="radio" name="gender"
+            value="hombre" checked>Hombre
+        <input onclick="document.getElementById('txtOther').disabled = true" id="genderWoman" type="radio" name="gender"
+            value="mujer">Mujer
+        <input onclick="document.getElementById('txtOther').disabled = false" id="genderOther" type="radio"
+            name="gender" value="other">Otro: <input id="txtOther" type="text" name="gender" disabled>
+        <br><br>
+        <!--Nivel de estudios-->
+        Nivel de estudio: <select id="options" name="myLevel">
+            <!--size="0" || multiple--></select>
+        <script>
+            var level = ['Primaria', 'Secundaria', 'Preparatoria', 'Universidad'];
+            var codeOption = "";
+            for (index = 0; index < level.length; index++) {
+                codeOption += "<option value='" + level[index].toLowerCase() + "'>" + level[index] + "</option>";
+            }
+            document.getElementById("options").innerHTML = codeOption;
+        </script>
+        <br><br>
+        <!--USUARIO-->
+        Usuario: <input type="text" name="username">
+        <br><br>
+        <!--CONTRASEÑA-->
+        Contraseña: <input type="password" name="password0">
+        <br><br>
+        <!--CONTRASEÑA-->
+        Confirmar contraseña: <input type="password" name="password0" required>
+        <br><br>
+        <input type="button" value="Comprobar si son iguales" onClick="comprobarClave()">
+        <br><br>
+        <!--CORREO ELECTRONICO-->
+        Correo: <input type="email" name="email">
+        <br><br>
+        <br><br>
+        <input type="submit" value="ENVIAR">
+        <input type="reset">
+    </form>
+</body>
+
+</html>
